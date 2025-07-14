@@ -1,5 +1,5 @@
 from flask import Flask
-from routes.analyze import analyze_bp
+from route.analyze import analyze_bp
 
 def create_app():
     app = Flask(__name__)

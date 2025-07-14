@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from src.extract import extract_text_from_pdf
-from src.gemini import analyze_contract_text
+from src.gem import analyze_contract_text
 from src.analysis import clean_analysis, format_analysis_for_layman
 
 analyze_bp = Blueprint('analyze', __name__)

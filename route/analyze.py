@@ -20,7 +20,7 @@ def analyze():
         # cleaned = clean_analysis(raw_output)
         # layman = format_analysis_for_layman(cleaned)
 
-        return jsonify({"result_json": cleaned, "result_text": layman}), 200
+        return jsonify({"result_json": raw_output}), 200
 
     except Exception as e:
         return jsonify({"error": f"Analysis failed: {str(e)}"}), 500

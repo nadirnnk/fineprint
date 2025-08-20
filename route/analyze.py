@@ -17,8 +17,8 @@ def analyze():
 
         text = extract_text_from_pdf(pdf_file)
         raw_output = analyze_contract_text(text)
-        cleaned = clean_analysis(raw_output)
-        layman = format_analysis_for_layman(cleaned)
+        # cleaned = clean_analysis(raw_output)
+        # layman = format_analysis_for_layman(cleaned)
 
         return jsonify({"result_json": cleaned, "result_text": layman}), 200
 
